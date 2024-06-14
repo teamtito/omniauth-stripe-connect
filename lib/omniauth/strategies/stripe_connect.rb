@@ -89,10 +89,10 @@ module OmniAuth
       end
 
       def request_params
-        request.params.except(*request_blacklisted_params)
+        request.params.except(*request_blocklisted_params)
       end
 
-      def request_blacklisted_params
+      def request_blocklisted_params
         %w(_method)
       end
     end
